@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23329067205B2A1B0064EC93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23329066205B2A1B0064EC93 /* AppDelegate.swift */; };
+		23329069205B2A1B0064EC93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23329068205B2A1B0064EC93 /* ViewController.swift */; };
+		2332906C205B2A1B0064EC93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2332906A205B2A1B0064EC93 /* Main.storyboard */; };
+		23329071205B2A1B0064EC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23329070205B2A1B0064EC93 /* Assets.xcassets */; };
+		23329074205B2A1B0064EC93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23329072205B2A1B0064EC93 /* LaunchScreen.storyboard */; };
+		2332907F205B2A1B0064EC93 /* GameBoy_PocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2332907E205B2A1B0064EC93 /* GameBoy_PocketTests.swift */; };
+		2332908A205B2A1B0064EC93 /* GameBoy_PocketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23329089205B2A1B0064EC93 /* GameBoy_PocketUITests.swift */; };
+		23329098205B2FCA0064EC93 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23329097205B2FCA0064EC93 /* StartScreenViewController.swift */; };
+		2332909B205B303E0064EC93 /* HighScoreScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2332909A205B303E0064EC93 /* HighScoreScreenViewController.swift */; };
+		23CAF25E205B320B0004D290 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CAF25D205B320B0004D290 /* GameScreenViewController.swift */; };
+		23CAF260205B334F0004D290 /* GameScreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CAF25F205B334F0004D290 /* GameScreenDelegate.swift */; };
+		23CAF262205B35030004D290 /* EventScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CAF261205B35030004D290 /* EventScreenViewController.swift */; };
+		23CAF264205B38540004D290 /* EventScreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CAF263205B38540004D290 /* EventScreenDelegate.swift */; };
+		23CAF267205B42040004D290 /* ninjaGoldData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23CAF265205B42040004D290 /* ninjaGoldData.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2332907B205B2A1B0064EC93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2332905B205B2A1B0064EC93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23329062205B2A1B0064EC93;
+			remoteInfo = "GameBoy Pocket";
+		};
+		23329086205B2A1B0064EC93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2332905B205B2A1B0064EC93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23329062205B2A1B0064EC93;
+			remoteInfo = "GameBoy Pocket";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23329063205B2A1B0064EC93 /* GameBoy Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GameBoy Pocket.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23329066205B2A1B0064EC93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23329068205B2A1B0064EC93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2332906B205B2A1B0064EC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23329070205B2A1B0064EC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23329073205B2A1B0064EC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23329075205B2A1B0064EC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2332907A205B2A1B0064EC93 /* GameBoy PocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GameBoy PocketTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2332907E205B2A1B0064EC93 /* GameBoy_PocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoy_PocketTests.swift; sourceTree = "<group>"; };
+		23329080205B2A1B0064EC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23329085205B2A1B0064EC93 /* GameBoy PocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GameBoy PocketUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23329089205B2A1B0064EC93 /* GameBoy_PocketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoy_PocketUITests.swift; sourceTree = "<group>"; };
+		2332908B205B2A1B0064EC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23329097205B2FCA0064EC93 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		2332909A205B303E0064EC93 /* HighScoreScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreScreenViewController.swift; sourceTree = "<group>"; };
+		23CAF25D205B320B0004D290 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
+		23CAF25F205B334F0004D290 /* GameScreenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenDelegate.swift; sourceTree = "<group>"; };
+		23CAF261205B35030004D290 /* EventScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScreenViewController.swift; sourceTree = "<group>"; };
+		23CAF263205B38540004D290 /* EventScreenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScreenDelegate.swift; sourceTree = "<group>"; };
+		23CAF266205B42040004D290 /* ninjaGoldData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ninjaGoldData.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23329060205B2A1B0064EC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23329077205B2A1B0064EC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23329082205B2A1B0064EC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2332905A205B2A1B0064EC93 = {
+			isa = PBXGroup;
+			children = (
+				23329065205B2A1B0064EC93 /* GameBoy Pocket */,
+				2332907D205B2A1B0064EC93 /* GameBoy PocketTests */,
+				23329088205B2A1B0064EC93 /* GameBoy PocketUITests */,
+				23329064205B2A1B0064EC93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23329064205B2A1B0064EC93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23329063205B2A1B0064EC93 /* GameBoy Pocket.app */,
+				2332907A205B2A1B0064EC93 /* GameBoy PocketTests.xctest */,
+				23329085205B2A1B0064EC93 /* GameBoy PocketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23329065205B2A1B0064EC93 /* GameBoy Pocket */ = {
+			isa = PBXGroup;
+			children = (
+				23329066205B2A1B0064EC93 /* AppDelegate.swift */,
+				23329068205B2A1B0064EC93 /* ViewController.swift */,
+				2332906A205B2A1B0064EC93 /* Main.storyboard */,
+				23329099205B2FD90064EC93 /* ViewControllers */,
+				23329070205B2A1B0064EC93 /* Assets.xcassets */,
+				23329072205B2A1B0064EC93 /* LaunchScreen.storyboard */,
+				23329075205B2A1B0064EC93 /* Info.plist */,
+				23CAF265205B42040004D290 /* ninjaGoldData.xcdatamodeld */,
+			);
+			path = "GameBoy Pocket";
+			sourceTree = "<group>";
+		};
+		2332907D205B2A1B0064EC93 /* GameBoy PocketTests */ = {
+			isa = PBXGroup;
+			children = (
+				2332907E205B2A1B0064EC93 /* GameBoy_PocketTests.swift */,
+				23329080205B2A1B0064EC93 /* Info.plist */,
+			);
+			path = "GameBoy PocketTests";
+			sourceTree = "<group>";
+		};
+		23329088205B2A1B0064EC93 /* GameBoy PocketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23329089205B2A1B0064EC93 /* GameBoy_PocketUITests.swift */,
+				2332908B205B2A1B0064EC93 /* Info.plist */,
+			);
+			path = "GameBoy PocketUITests";
+			sourceTree = "<group>";
+		};
+		23329099205B2FD90064EC93 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				23329097205B2FCA0064EC93 /* StartScreenViewController.swift */,
+				2332909A205B303E0064EC93 /* HighScoreScreenViewController.swift */,
+				23CAF25D205B320B0004D290 /* GameScreenViewController.swift */,
+				23CAF261205B35030004D290 /* EventScreenViewController.swift */,
+				23CAF25F205B334F0004D290 /* GameScreenDelegate.swift */,
+				23CAF263205B38540004D290 /* EventScreenDelegate.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23329062205B2A1B0064EC93 /* GameBoy Pocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2332908E205B2A1C0064EC93 /* Build configuration list for PBXNativeTarget "GameBoy Pocket" */;
+			buildPhases = (
+				2332905F205B2A1B0064EC93 /* Sources */,
+				23329060205B2A1B0064EC93 /* Frameworks */,
+				23329061205B2A1B0064EC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GameBoy Pocket";
+			productName = "GameBoy Pocket";
+			productReference = 23329063205B2A1B0064EC93 /* GameBoy Pocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23329079205B2A1B0064EC93 /* GameBoy PocketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23329091205B2A1C0064EC93 /* Build configuration list for PBXNativeTarget "GameBoy PocketTests" */;
+			buildPhases = (
+				23329076205B2A1B0064EC93 /* Sources */,
+				23329077205B2A1B0064EC93 /* Frameworks */,
+				23329078205B2A1B0064EC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2332907C205B2A1B0064EC93 /* PBXTargetDependency */,
+			);
+			name = "GameBoy PocketTests";
+			productName = "GameBoy PocketTests";
+			productReference = 2332907A205B2A1B0064EC93 /* GameBoy PocketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23329084205B2A1B0064EC93 /* GameBoy PocketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23329094205B2A1C0064EC93 /* Build configuration list for PBXNativeTarget "GameBoy PocketUITests" */;
+			buildPhases = (
+				23329081205B2A1B0064EC93 /* Sources */,
+				23329082205B2A1B0064EC93 /* Frameworks */,
+				23329083205B2A1B0064EC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23329087205B2A1B0064EC93 /* PBXTargetDependency */,
+			);
+			name = "GameBoy PocketUITests";
+			productName = "GameBoy PocketUITests";
+			productReference = 23329085205B2A1B0064EC93 /* GameBoy PocketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2332905B205B2A1B0064EC93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jonathan Yee";
+				TargetAttributes = {
+					23329062205B2A1B0064EC93 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					23329079205B2A1B0064EC93 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 23329062205B2A1B0064EC93;
+					};
+					23329084205B2A1B0064EC93 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 23329062205B2A1B0064EC93;
+					};
+				};
+			};
+			buildConfigurationList = 2332905E205B2A1B0064EC93 /* Build configuration list for PBXProject "GameBoy Pocket" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2332905A205B2A1B0064EC93;
+			productRefGroup = 23329064205B2A1B0064EC93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23329062205B2A1B0064EC93 /* GameBoy Pocket */,
+				23329079205B2A1B0064EC93 /* GameBoy PocketTests */,
+				23329084205B2A1B0064EC93 /* GameBoy PocketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23329061205B2A1B0064EC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23329074205B2A1B0064EC93 /* LaunchScreen.storyboard in Resources */,
+				23329071205B2A1B0064EC93 /* Assets.xcassets in Resources */,
+				2332906C205B2A1B0064EC93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23329078205B2A1B0064EC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23329083205B2A1B0064EC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2332905F205B2A1B0064EC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CAF25E205B320B0004D290 /* GameScreenViewController.swift in Sources */,
+				23329069205B2A1B0064EC93 /* ViewController.swift in Sources */,
+				23329067205B2A1B0064EC93 /* AppDelegate.swift in Sources */,
+				23CAF262205B35030004D290 /* EventScreenViewController.swift in Sources */,
+				23CAF267205B42040004D290 /* ninjaGoldData.xcdatamodeld in Sources */,
+				23CAF264205B38540004D290 /* EventScreenDelegate.swift in Sources */,
+				2332909B205B303E0064EC93 /* HighScoreScreenViewController.swift in Sources */,
+				23CAF260205B334F0004D290 /* GameScreenDelegate.swift in Sources */,
+				23329098205B2FCA0064EC93 /* StartScreenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23329076205B2A1B0064EC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2332907F205B2A1B0064EC93 /* GameBoy_PocketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23329081205B2A1B0064EC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2332908A205B2A1B0064EC93 /* GameBoy_PocketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2332907C205B2A1B0064EC93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23329062205B2A1B0064EC93 /* GameBoy Pocket */;
+			targetProxy = 2332907B205B2A1B0064EC93 /* PBXContainerItemProxy */;
+		};
+		23329087205B2A1B0064EC93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23329062205B2A1B0064EC93 /* GameBoy Pocket */;
+			targetProxy = 23329086205B2A1B0064EC93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2332906A205B2A1B0064EC93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2332906B205B2A1B0064EC93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23329072205B2A1B0064EC93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23329073205B2A1B0064EC93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2332908C205B2A1C0064EC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2332908D205B2A1C0064EC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2332908F205B2A1C0064EC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PJA739TV7C;
+				INFOPLIST_FILE = "GameBoy Pocket/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CodingDojoProject.GameBoy-Pocket";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23329090205B2A1C0064EC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PJA739TV7C;
+				INFOPLIST_FILE = "GameBoy Pocket/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CodingDojoProject.GameBoy-Pocket";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23329092205B2A1C0064EC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PJA739TV7C;
+				INFOPLIST_FILE = "GameBoy PocketTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CodingDojoProject.GameBoy-PocketTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameBoy Pocket.app/GameBoy Pocket";
+			};
+			name = Debug;
+		};
+		23329093205B2A1C0064EC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PJA739TV7C;
+				INFOPLIST_FILE = "GameBoy PocketTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CodingDojoProject.GameBoy-PocketTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameBoy Pocket.app/GameBoy Pocket";
+			};
+			name = Release;
+		};
+		23329095205B2A1C0064EC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PJA739TV7C;
+				INFOPLIST_FILE = "GameBoy PocketUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CodingDojoProject.GameBoy-PocketUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GameBoy Pocket";
+			};
+			name = Debug;
+		};
+		23329096205B2A1C0064EC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PJA739TV7C;
+				INFOPLIST_FILE = "GameBoy PocketUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CodingDojoProject.GameBoy-PocketUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GameBoy Pocket";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2332905E205B2A1B0064EC93 /* Build configuration list for PBXProject "GameBoy Pocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2332908C205B2A1C0064EC93 /* Debug */,
+				2332908D205B2A1C0064EC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2332908E205B2A1C0064EC93 /* Build configuration list for PBXNativeTarget "GameBoy Pocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2332908F205B2A1C0064EC93 /* Debug */,
+				23329090205B2A1C0064EC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23329091205B2A1C0064EC93 /* Build configuration list for PBXNativeTarget "GameBoy PocketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23329092205B2A1C0064EC93 /* Debug */,
+				23329093205B2A1C0064EC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23329094205B2A1C0064EC93 /* Build configuration list for PBXNativeTarget "GameBoy PocketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23329095205B2A1C0064EC93 /* Debug */,
+				23329096205B2A1C0064EC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		23CAF265205B42040004D290 /* ninjaGoldData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23CAF266205B42040004D290 /* ninjaGoldData.xcdatamodel */,
+			);
+			currentVersion = 23CAF266205B42040004D290 /* ninjaGoldData.xcdatamodel */;
+			path = ninjaGoldData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2332905B205B2A1B0064EC93 /* Project object */;
+}
