@@ -49,28 +49,37 @@ class GameScreenViewController: UIViewController, EventScreenDelegate, UITableVi
     func eventOccured(by controller: EventScreenViewController, adjective: String) {
         if adjective == "Farm" {
             let item = NSEntityDescription.insertNewObject(forEntityName: "BucketListItem", into: managedObjectContext) as! BucketListItem
-            item.text = "Farming"
+            item.text = "Duel Result"
             array.append(item)
-            let newGold = Int(arc4random_uniform(11)) + 10
+            let newGold = Int(arc4random_uniform(101)) - 50
             gold += newGold
+            if gold < 0 {
+                gold = 0
+            }
             item.gold = String(newGold)
         } else if adjective == "Cave" {
             let item = NSEntityDescription.insertNewObject(forEntityName: "BucketListItem", into: managedObjectContext) as! BucketListItem
-            item.text = "Caving"
+            item.text = "Duel Result"
             array.append(item)
-            let newGold = Int(arc4random_uniform(6)) + 5
+            let newGold = Int(arc4random_uniform(101)) - 50
             gold += newGold
+            if gold < 0 {
+                gold = 0
+            }
             item.gold = String(newGold)
         } else if adjective == "House" {
             let item = NSEntityDescription.insertNewObject(forEntityName: "BucketListItem", into: managedObjectContext) as! BucketListItem
-            item.text = "Housing"
+            item.text = "Duel Result"
             array.append(item)
-            let newGold = Int(arc4random_uniform(4)) + 2
+            let newGold = Int(arc4random_uniform(101)) - 50
             gold += newGold
+            if gold < 0 {
+                gold = 0
+            }
             item.gold = String(newGold)
         } else {
             let item = NSEntityDescription.insertNewObject(forEntityName: "BucketListItem", into: managedObjectContext) as! BucketListItem
-            item.text = "Casinoing"
+            item.text = "Duel Result"
             array.append(item)
             let newGold = Int(arc4random_uniform(101)) - 50
             gold += newGold

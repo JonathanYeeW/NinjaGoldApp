@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ninja Gold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jez-hm-3cs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jedi Gold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jez-hm-3cs">
                                 <rect key="frame" x="5" y="114" width="365" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="365" id="Aly-8V-Kxs"/>
@@ -101,8 +101,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Gold Found!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XaQ-UK-qAG">
-                                                    <rect key="frame" x="256.5" y="12" width="93.5" height="20.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Nova Crystals Found!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XaQ-UK-qAG">
+                                                    <rect key="frame" x="187" y="12" width="163" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -177,18 +177,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IV-xl-i05">
-                                <rect key="frame" x="67.5" y="156" width="240" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="4RZ-pa-U0I"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Lable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvS-Hm-aZX">
-                                <rect key="frame" x="0.0" y="70" width="375" height="50.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvS-Hm-aZX">
+                                <rect key="frame" x="0.0" y="143" width="375" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -231,24 +222,33 @@
                                     <constraint firstAttribute="width" constant="250" id="o2U-e1-bkX"/>
                                 </constraints>
                             </stackView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="T2o-On-QUL">
-                                <rect key="frame" x="59" y="237.5" width="257" height="192"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've been challenged by..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voX-A4-Yl8">
+                                <rect key="frame" x="17" y="63" width="341" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would You like to duel?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IV-xl-i05">
+                                <rect key="frame" x="96" y="171" width="183" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="192" id="9Ux-Xs-P8P"/>
-                                    <constraint firstAttribute="width" constant="257" id="rps-cH-uRO"/>
+                                    <constraint firstAttribute="width" constant="183" id="4RZ-pa-U0I"/>
                                 </constraints>
-                            </mapView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3IV-xl-i05" firstAttribute="top" secondItem="uvS-Hm-aZX" secondAttribute="bottom" constant="35.5" id="22I-Df-6mr"/>
-                            <constraint firstItem="uvS-Hm-aZX" firstAttribute="top" secondItem="oPE-Y3-w8y" secondAttribute="top" constant="50" id="Bcd-Ax-XCK"/>
-                            <constraint firstItem="T2o-On-QUL" firstAttribute="centerX" secondItem="xaB-oP-4Nq" secondAttribute="centerX" id="Ddw-uX-S95"/>
+                            <constraint firstItem="3IV-xl-i05" firstAttribute="top" secondItem="uvS-Hm-aZX" secondAttribute="bottom" constant="28" id="22I-Df-6mr"/>
+                            <constraint firstItem="voX-A4-Yl8" firstAttribute="centerX" secondItem="xaB-oP-4Nq" secondAttribute="centerX" id="B4p-Y7-m0S"/>
                             <constraint firstItem="3IV-xl-i05" firstAttribute="centerX" secondItem="xaB-oP-4Nq" secondAttribute="centerX" id="Fwl-As-53Y"/>
-                            <constraint firstItem="T2o-On-QUL" firstAttribute="centerY" secondItem="xaB-oP-4Nq" secondAttribute="centerY" id="HTV-5D-STJ"/>
                             <constraint firstItem="RpG-Ya-w5F" firstAttribute="centerX" secondItem="xaB-oP-4Nq" secondAttribute="centerX" id="R7W-MC-p9j"/>
                             <constraint firstItem="uvS-Hm-aZX" firstAttribute="leading" secondItem="oPE-Y3-w8y" secondAttribute="leading" id="UQU-ML-vtW"/>
                             <constraint firstItem="oPE-Y3-w8y" firstAttribute="bottom" secondItem="RpG-Ya-w5F" secondAttribute="bottom" constant="75" id="Uh7-Nl-KBs"/>
+                            <constraint firstItem="3IV-xl-i05" firstAttribute="centerX" secondItem="xaB-oP-4Nq" secondAttribute="centerX" id="V4P-jU-WFv"/>
+                            <constraint firstItem="voX-A4-Yl8" firstAttribute="top" secondItem="oPE-Y3-w8y" secondAttribute="top" constant="43" id="Yl1-b6-jKx"/>
+                            <constraint firstItem="uvS-Hm-aZX" firstAttribute="top" secondItem="voX-A4-Yl8" secondAttribute="bottom" constant="46.5" id="m8e-GM-MSU"/>
                             <constraint firstItem="oPE-Y3-w8y" firstAttribute="trailing" secondItem="uvS-Hm-aZX" secondAttribute="trailing" id="uxF-Q4-e8V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oPE-Y3-w8y"/>
@@ -286,8 +286,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="365" height="404.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Gold Collected:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H80-FU-Q8k">
-                                                    <rect key="frame" x="15" y="192" width="118" height="20.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Nova Crystals Collected:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H80-FU-Q8k">
+                                                    <rect key="frame" x="15" y="192" width="187.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
